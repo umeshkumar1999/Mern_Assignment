@@ -47,3 +47,4 @@ Live Server is a VS Code extension that runs a local development server to displ
 |14| Print the file content | `cat filedName`| `cat fileName`|
 |15| clear the screen | ` clear`| `cls`|
 |16| Open the folder in vs-code | `code .`| `code .`|
+
