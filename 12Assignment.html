@@ -1,0 +1,64 @@
+<!--Portfolio with Accessible Images -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio with Accessible Images - HTML &amp; CSS course assignment"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio with Accessible Images</title>
+  </head>
+  <body>
+    <header>
+      <h1>Umesh Kumar - porfolio</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Profile</h2>
+        <!--Meaningful alt: describes content and purpose-->
+        <img
+          src="https://images.unsplash.com/photo-1792915700300-96ac7109a672?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+          width="150"
+          height="150"
+          alt="Nature Image"
+        >
+      </section>
+
+      <section>
+            <h2>Projects</h2>
+            <figure>
+                <img src="https://d31kzl7c7thvlu.cloudfront.net/ghost/2022/07/Resume-Builder.png" height="150" width="150" alt="Resume webpage">
+                <figcaption>Resume website</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.nazVoNJ9J_178iRkmiiAhwHaJd?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" height="150" width="150" alt="Screenshot of the student resitration form ">
+                    <figcaption>Registration form</figcaption>
+            </figure>
+      </section>
+
+      <section>
+        <h2>Decorative Image</h2>
+        <!--Purely decorative image get an EMPTY alt so screen readers skip them-->
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Gb6ywsvYj44tdL_kgnAo3gHaEM?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="600" height="80" alt="">
+      </section>
+
+      <section>
+        <h2>Linked image</h2>
+        <a href="https://github.com"><img src="https://tse4.mm.bing.net/th/id/OIP.NGIDdVP6vw9ue_D-mrEVFQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="60" height="60" alt=""></a>
+      </section>
+    </main>
+
+<!--
+    ALT TEXT CHECKLIST
+    * Describe what the image shows and why it matters.
+    * Don't start with "image of..."(screen readers announce it).
+    * Linked image: describe the link destination.
+    * Decorative image: alt="".
+    -->
+
+  </body>
+</html>
