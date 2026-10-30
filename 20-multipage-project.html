@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multi-page HTML project: Home,About,Registration and Contact.">
+    <meta name="author" content="Umeah Kumar">
+    <title>Multi-Page Project - Home</title>
+      <!-- Pure HTML "pages": each <section class="page"> acts as a page. Using :target
+       we show only the page whose link was clicked. (Plain HTML needs no CSS, but this
+       tiny rule hides the other pages so it behaves like a real multi-page site.) -->
+</head>
+<body>
+    <header>
+        <h1>Umesh's website</h1>
+        <nav aria-label="Mian">
+            <a href="#home">Home</a>|
+            <a href="#about">About</a>|
+            <a href="#registration">Registration</a>|
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page">
+            <h2>Home</h2>
+            <p>Welcome! This site combines everything from the first four weeks: headings, lists, images, links, forms and
+        tables.</p>
+        <img src="https://images.unsplash.com/vector-1792884126197-d2b62a020751?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" width="600" height="200" style="max-width: 100%; height: auto;"  alt="pointing to a coin">
+        <h3>What cay you do here</h3>
+
+        <ul>
+            <li>Read <a href="#about">About me</a></li>
+            <li><a href="#registration">Registration</a> for the workshop</li>
+            <li>Send a message via the <a href="#contact">Contact page</a></li>
+        </ul>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About</h2>
+            <p>I am computer-science student learning front-end development.</p>
+            <table border="1" cellpadding = "6">
+                <caption>Quick facts</caption>
+                <tr>
+                    <th scope="row">City</th>
+                    <td>Badaun</td>
+                </tr>
+                <tr>
+                    <th scope="row">Course</th>
+                    <td>BCA(AI)</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Interests</th>
+                    <td>Web,Cricket,Music</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="registration" class="page">
+            <h2>workshop Registration</h2>
+            <form action="#" method="post">
+                <p><label>Name <input type="text" name="name" required></label></p>
+                <p><label>Email <input type="email" name="email" required></label></p>
+                <p><label>Date of birth <input type="date" name="dob" required></label></p>
+                <p><label>Level
+                    <select name="level">
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+
+                    </select>
+                </label></p>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact</h2>
+            <form action="mailto: umeshkumaru9878@gmail.com" method="post" enctype="text/plain">
+                <p><label>Your name <input type="text" name="n" required></label></p>
+                <p><label>Message <br><textarea name="m" rows="5" cols="4o" required></textarea></label></p>
+                <button type="submit">Send</button>
+            </form>
+            <address>Email: <a href="mailto: umeshkumaru9878@gmail.com">umeshkumaru9878@gmail.com</a></address>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 Umesh Kumar . <a href="#home">Back to Home</a></small></p>
+    </footer>
+</body>
+</html>
