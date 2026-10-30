@@ -9,6 +9,22 @@
       <!-- Pure HTML "pages": each <section class="page"> acts as a page. Using :target
        we show only the page whose link was clicked. (Plain HTML needs no CSS, but this
        tiny rule hides the other pages so it behaves like a real multi-page site.) -->
+
+       <style>
+            .page{
+                display: hidden;
+            }
+            .page:target,body:not(:has(.page:target)) #home{
+                display: block;
+            }
+
+            body{
+                font-family: system-ui,sans-serif;
+                max-width: 760px;
+                margin: o auto;
+                padding: 1rem;
+            }
+       </style>
 </head>
 <body>
     <header>
